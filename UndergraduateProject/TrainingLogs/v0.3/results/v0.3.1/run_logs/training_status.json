@@ -1,0 +1,24 @@
+{
+    "HiderAgent": {
+        "checkpoints": [
+            {
+                "steps": 200410,
+                "file_path": "results\\v0.3.1_PPO\\HiderAgent\\HiderAgent-200410.onnx",
+                "reward": -0.4099999666213989,
+                "creation_time": 1609537398.8263972
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 200410,
+            "file_path": "results\\v0.3.1_PPO\\HiderAgent.onnx",
+            "reward": -0.4099999666213989,
+            "creation_time": 1609537398.8263972
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.22.0",
+        "torch_version": "1.7.0+cu110",
+        "tensorflow_version": -1
+    }
+}

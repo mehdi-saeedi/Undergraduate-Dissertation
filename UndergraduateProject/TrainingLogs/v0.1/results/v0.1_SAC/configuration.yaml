@@ -1,0 +1,30 @@
+behaviors:
+  HiderAgent:
+    behavioral_cloning: null
+    checkpoint_interval: 500000
+    framework: pytorch
+    hyperparameters: {batch_size: 512, buffer_init_steps: 0, buffer_size: 100000,
+      init_entcoef: 0.05, learning_rate: 0.003, learning_rate_schedule: constant,
+      reward_signal_steps_per_update: 4.0, save_replay_buffer: false, steps_per_update: 4.0,
+      tau: 0.005}
+    init_path: null
+    keep_checkpoints: 5
+    max_steps: 200000
+    network_settings: {hidden_units: 256, memory: null, normalize: false, num_layers: 3,
+      vis_encode_type: simple}
+    reward_signals:
+      curiosity: {encoding_size: 256, gamma: 0.99, learning_rate: 0.0003, strength: 0.01}
+      extrinsic: {gamma: 0.99, strength: 1.0}
+    self_play: null
+    summary_freq: 10000
+    threaded: true
+    time_horizon: 64
+    trainer_type: sac
+checkpoint_settings: {force: true, inference: false, initialize_from: null, load_model: false,
+  resume: false, run_id: v0.1_SAC, train_model: false}
+debug: false
+default_settings: null
+engine_settings: {capture_frame_rate: 60, height: 84, no_graphics: false, quality_level: 5,
+  target_frame_rate: -1, time_scale: 20, width: 84}
+env_settings: {base_port: 5005, env_args: null, env_path: null, num_envs: 1, seed: -1}
+environment_parameters: null
